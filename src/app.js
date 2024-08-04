@@ -1,10 +1,10 @@
 import React from "react";
-import About from "./componenets/about";
-import Contact from "./componenets/contact";
-import Navbar from "./componenets/navbar";
-import Projects from "./componenets/projects";
-import Skills from "./componenets/skills";
-import Testimonials from "./componenets/testimonials";
+import About from "./componenets/About";
+import Contact from "./componenets/Contact";
+import Navbar from "./componenets/Navbar";
+import Projects from "./componenets/Projects";
+import Skills from "./componenets/Skills";
+import Testimonials from "./componenets/Testimonials";
 
 export default function App() {
     return (
