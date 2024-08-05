@@ -1,0 +1,23 @@
+{
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio on react",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisduffey/react-portfolio.git"
+  },
+  "keywords": [
+    "Chris",
+    "Duffey"
+  ],
+  "author": "Chris Duffey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisduffey/react-portfolio/issues"
+  },
+  "homepage": "https://github.com/chrisduffey/react-portfolio#readme"
+}
