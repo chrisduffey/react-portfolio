@@ -1,8 +1,11 @@
 import styles from './HeroStyles.module.css'
 import heroImg from '../../assets/CTD.png'
-import themeIcon from '../../assets/icons8-sun.svg'
-import linkedinIcon from '../../assets/icons8-linkedin.svg'
-import githubIcon from '../../assets/icons8-github.svg'
+import sun from '../../assets/icons8-sun.svg'
+import moon from '../../assets/icons8-moon-50.png'
+import linkedinLight from '../../assets/icons8-linkedin.svg'
+import linkedinDark from '../../assets/linkedinDark.png'
+import githubLight from '../../assets/icons8-github.svg'
+import githubDark from '../../assets/githubDark.png'
 import CV from '../../assets/Chris Duffey Res.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
@@ -10,8 +13,13 @@ import { useTheme } from '../../common/ThemeContext'
 function Hero() {
     const {theme, toggleTheme} = useTheme();
 
-const themeIcon = theme === 'light'? 
-  return (<section id='hero' className={styles.container}>
+const themeIcon = theme === 'light'? sun: moon;
+const githubIcon = theme === 'light'? githubLight: githubDark;
+const linkedinIcon = theme === 'light'? linkedinLight: linkedinDark;
+
+
+  return (
+  <section id='hero' className={styles.container}>
     <div><img className={styles.hero}
      src={heroImg}
       alt='profile pic of chris duffey'
@@ -36,7 +44,7 @@ const themeIcon = theme === 'light'?
             </a>
            
          </span>
-         <p>Inspire to make tomorrow better!</p>
+         <p className={styles.description}>Inspire to make tomorrow better!</p>
          <a href={CV} download> 
             <button className='hover' >Resume</button>
          </a>
