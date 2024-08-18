@@ -1,11 +1,19 @@
 import './App.css'
-import Hero from './sections/Hero/Hero';
+import Contact from './sections/Contact/Contact';
+import Header from './sections/Header/Header';
 import Projects from './sections/Projects/Projects';
+import Footer from './sections/Footer/Footer';
+
+
 
 function App() {
-  return ( <>
-  <Hero/>
+  return ( 
+  <>
+  
+  <Header/>
   <Projects/>
+  <Contact/>
+  <Footer/>
   </>
   )
 }
